@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:text="@string/titulo_cadastro"
+            android:textColor="@color/texto_titulo"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <!-- Nome -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rotulo_nome"
+            android:textColor="@color/texto_rotulo"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_campo"
+            android:hint="@string/hint_nome"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName|textCapWords"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/texto_campo"
+            android:textColorHint="@color/texto_hint" />
+
+        <!-- Curso -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rotulo_curso"
+            android:textColor="@color/texto_rotulo"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtCurso"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_campo"
+            android:hint="@string/hint_curso"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/texto_campo"
+            android:textColorHint="@color/texto_hint" />
+
+        <!-- Idade -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rotulo_idade"
+            android:textColor="@color/texto_rotulo"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtIdade"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_campo"
+            android:hint="@string/hint_idade"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="3"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/texto_campo"
+            android:textColorHint="@color/texto_hint" />
+
+        <!-- Cidade (Desafio 3) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rotulo_cidade"
+            android:textColor="@color/texto_rotulo"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtCidade"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/bg_campo"
+            android:hint="@string/hint_cidade"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/texto_campo"
+            android:textColorHint="@color/texto_hint" />
+
+        <Button
+            android:id="@+id/btnVisualizar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="@color/azul_primario"
+            android:text="@string/btn_visualizar"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+</ScrollView>
